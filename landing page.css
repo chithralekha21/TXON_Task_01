@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',serif;
+    
+    }
+  body{
+    padding-top: 0vh;
+    justify-content: center;
+  
+    background: url(' ') no-repeat;
+  
+   
+  }
+.scroll{
+  color: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+  header {
+    width:100;
+    padding:20px 100px;
+    background:red;
+    display: flex;
+    justify-content: space-between;
+    algin-iteams: center;
+    z-index:99;
+  }
+  .logo{
+    font-size: 2em;
+    color:wheat;
+    user-select: none;
+    }
+  .navigation a {
+    position: relative;
+    font-size: 2.0em;
+    color: white;
+    text-decrartion: none;
+    font-weight: 500;
+    margin-left: 100px;
+  }
+  .navigation a::after {
+    content:'':
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bacground: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transistion: transform .5s;
+  }
+  .navigation a:hover::after{
+    transform: scaleX(1);
+    
+  }
+    
+    
+  .navigation .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    bacground: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 900;
+    margin-left: 40px;
+    transition: 1.5s;
+  }
+  .navigation .btnlogin-popup:hover {
+    background: white;
+    color: green;
+    
+  }
+  .navigation a::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transistion: transform .5s;
+  }
+  .navigation a:hover::after{
+    transform: scaleX(1);
+  }
+  .navigation .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffff;
+    outline: none;
+    border-radius: 6px;
+  }
+  .footer{
+    padding-bottom: 0%;
+    text-align: center;
+  }
